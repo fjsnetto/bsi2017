@@ -1,0 +1,59 @@
+
+
+
+
+
+'
+
+
+
+
+
+
+2- Informe a FC (frequencia cardiaca) do paciente e salve em FC
+	informa a Temperatura e salve em temperatura
+	
+	2.1- se FC < 50 ou FC > 140:
+		amarelo = amarelo +1
+	2.2- se paSistolica < 90 ou > 240:
+		amarelo = amarelo +1
+	2.3- se paDiastolica > 130:
+		amarelo = amarelo +1
+	2.4- se temperatura < 35 ou > 40:
+		amarelo = amarelo +1
+	2.5- se amarelo >= 2:
+		urgencia = true
+		imprima 'Paciente em estado de urgência, requer atendimento priopritário'
+		
+3- Imprima 'Responda Sim ou Não para as perguntas seguintes. Use 0-Não e 1-Sim'
+	O paciente tem mais de 60 anos? 0 ou 1? salve em idade
+	É gestante com complicações na gravidez? salve em gestante
+	É deficiente físico? salve em deficiente
+	É um retorno com menos de 24 horas devido a não melhora? salve em retorno
+	Impossibilidade de deambulação? salve em deambulacao
+	Asma fora de crise? salve em asma
+	Enxaqueca? Paciente com diagnóstico anterior de enxaqueca
+	
+	3.1- se idade ou gestante entao:
+	semiUrgencia = true
+	imprima 'Paciente em estado de semi urgencia, requer atendimento em até 01 hora'
+	3.2- Se não:
+		3.2.1- se deficiente:
+		verde = verde +1	
+		3.2.2- se retorno:
+		verde = verde +1
+		3.2.3- se deambulacao:
+		verde = verde +1
+		3.2.4- se asma:
+		verde = verde +1
+		3.2.5- se enxaqueca:
+		verde = verde +1
+		3.2.6- se verde >= 2:
+		semiUrgencia = true
+		imprima 'Paciente em estado de semi urgencia, requer atendimento em até 01 hora'
+		3.2.7- Se não:
+		imprima 'Paciente em estado de não urgencia, atendimento por ordem de chegada'
+
+	
+	
+		
